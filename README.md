@@ -13,7 +13,7 @@ The dataset has two goals:
 1. Predict English fluency among speakers and learners of Arab accents.
 2. Identify Arabic accents from spoken L2 English speech.
 
-**Note:** The dataset is not included in this repository.
+**Note:** The speech corpus itself is not included in this repository. However, the extracted features are provided in the CSV files.
 
 ---
 
@@ -28,8 +28,13 @@ The repository includes two main notebooks:
 ---
 
 ## How to Run
-1. Download the dataset from the source.
-2. Extract speech features by running `feature_extraction.ipynb`.
-3. Store extracted features in the same folder as `accent_classification.ipynb`.
-4. Open and run `accent_classification.ipynb` to train the model and evaluate results.
 
+### Feature Extraction
+There are two options:
+
+1. Download the speech corpus from the source and extract features by running `feature_extraction.ipynb`.
+2. Use the provided CSV files containing the extracted features.
+
+### Model Training and Evaluation
+1. Store the extracted features in CSV files in the same folder as `accent_classification.ipynb`.
+2. Open and run `accent_classification.ipynb` to train the models and evaluate results.
